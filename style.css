@@ -112,6 +112,18 @@ button {
     background-color: #555;
 } 
 
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: #0A3871;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .header{
