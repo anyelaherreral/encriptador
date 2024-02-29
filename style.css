@@ -1,0 +1,131 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e9ecf8;
+    padding: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+textarea, .input-area textarea::placeholder{
+    text-align: center;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.input-area, .output-area {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.output-area #mensajeInicial{
+    text-align: center;
+}
+
+.output-area #textoResultado{
+    text-align: center;
+    margin: 30px 0;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.advertencia {
+    display: flex;
+    white-space: nowrap;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center; /* Para alinear verticalmente el contenido */
+    margin: 5px 0; /* Ajusta el margen según sea necesario */
+    padding: 0; /* Elimina el padding para que la advertencia esté más compacta */
+    font-size: 14px; /* Tamaño de fuente ajustable */
+    font-weight: bold;
+}
+
+.advertencia:before {
+    content: "❗";
+    margin-right: 2px; /* Espacio entre el símbolo y el texto */
+    font-size: 20px; /* Tamaño del símbolo ajustable */
+    line-height: 1; /* Asegura que la altura de línea sea ajustada */
+}
+
+.button-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border-color: #0A3871;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#encriptar {
+    color: #fff;
+    background-color: #0A3871;
+    margin-right: 25px;
+}
+
+#desencriptar {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    margin-right: auto;
+    
+}
+
+#copiar {
+    color: #0A3871;
+    background-color: white;
+    margin-left: 25px;
+    display: none; 
+}
+
+ button:hover {
+    background-color: #555;
+} 
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .header{
+        text-align: center;
+    }
+    .container {
+        padding: 10px;
+    }
+
+    .input-area, .output-area {
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
